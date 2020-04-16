@@ -23,7 +23,9 @@ module.exports = {
   ** Global CSS
   */
   css: [
-    'element-ui/lib/theme-chalk/index.css'
+    'element-ui/lib/theme-chalk/reset.css',
+    'element-ui/lib/theme-chalk/index.css',
+    'assets/css/main.css'
   ],
   /*
   ** Plugins to load before mounting the App
@@ -59,5 +61,12 @@ module.exports = {
     */
     extend (config, ctx) {
     }
+  },
+  /*
+  * 如何更改应用的主机和端口配置？https://zh.nuxtjs.org/faq/host-port/
+  * */
+  server: {
+    port: 9001/*, // default: 3000
+    host: '0.0.0.0' // default: localhost*/
   }
 }
