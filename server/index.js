@@ -25,7 +25,7 @@ const config = require('../nuxt.config.js')
 config.dev = app.env !== 'production'
 
 app.keys = ['mt', 'keyskeys']
-app.proxy = true
+app.proxy = true // porxy头部将被信任
 
 app.use(session({
   prefix: 'mt:uid',
